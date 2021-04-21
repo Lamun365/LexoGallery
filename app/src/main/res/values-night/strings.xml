@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gallery">gallery</string>
+    <string name="info">info</string>
+    <string name="share">share</string>
+    <string name="title">Title</string>
+    <string name="size">Size</string>
+    <string name="date">Date</string>
+</resources>

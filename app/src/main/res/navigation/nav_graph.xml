@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/galleryFrag">
+
+    <fragment
+        android:id="@+id/galleryFrag"
+        android:name="com.lexo.lexogallery.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFrag_to_imageFragment"
+            app:destination="@id/imageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.lexo.lexogallery.ImageFragment"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_image" >
+        <argument
+            android:name="uriString"
+            app:argType="string" />
+        <argument
+            android:name="displayString"
+            app:argType="string" />
+        <argument
+            android:name="sizeString"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_imageFragment_to_galleryFrag"
+            app:destination="@id/galleryFrag" />
+        <action
+            android:id="@+id/action_imageFragment_to_detailsFrag"
+            app:destination="@id/detailsFrag" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFrag"
+        android:name="com.lexo.lexogallery.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="uriBackString"
+            app:argType="string" />
+        <argument
+            android:name="displayName"
+            app:argType="string" />
+        <argument
+            android:name="size"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+    </fragment>
+</navigation>
