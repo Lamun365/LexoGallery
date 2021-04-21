@@ -8,7 +8,7 @@
  * Can share photo to social networks
 
 ### Installing
-Download apk file here [Music player v1.3](https://github.com/Lamun365/LexoGallery/releases/tag/v0.1)
+Download apk file here [Lexo Gallery v0.1](https://github.com/Lamun365/LexoGallery/releases/tag/v0.1)
 ```
 https://github.com/Lamun365/LexoGallery/releases/tag/v0.1
 ```
